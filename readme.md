@@ -2,7 +2,7 @@
 
 ## Autor
 
-**Nombre:** Andy Morales  
+**Nombre:** Andy Joel Morales Espinoza 
 **Materia:** Programación III
 
 ---
