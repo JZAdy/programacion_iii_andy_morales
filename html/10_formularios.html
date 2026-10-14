@@ -1,17 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
 </head>
+
 <body>
     <form action="/registro" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre">
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido">
+        <table>
+            <tr>
+                <td>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Luke">
+                </td>
+                <td>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido" placeholder="Ej: Skywalker">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Contraseña:</label><br>
+                    <input type="password" id="password" name="password">
+                </td>
+                <td>
+                    <label for="confirm_password">Confirmar Contraseña:</label><br>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edad">Edad:</label><br>
+                    <input type="number" id="edad" name="edad">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>seleccione un bando</p>
+                    <input type="radio" id="jedi" name="bando" value="jedi">
+                    <label for="jedi">Jedi</label>
+                    <input type="radio" id="sith" name="bando" value="sith">
+                    <label for="sith">Sith</label>
+                </td>
+                <td>
+                    <label for="nivel_fuerza">Nivel de Fuerza:</label><br>
+                    <input type="number" id="nivel_fuerza" name="nivel_fuerza" min="0" max="100" step="5">
+                </td>
+                <td>
+                    <label for="habilidades">seleccione Habilidades:</label><br>
+
+                    <input type="checkbox" id="fuerza" name="habilidades" value="fuerza">
+                    <label for="fuerza">uso de la Fuerza</label><br>
+
+                    <input type="checkbox" id="sable" name="habilidades" value="sable">
+                    <label for="sable">uso del Sable de Luz</label><br>
+
+                    <input type="checkbox" id="levitar" name="habilidades" value="levitar">
+                    <label for="levitar">levitación</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="planeta">Planeta de Origen:</label><br>
+                    <select id="planeta" name="planeta" required>
+                        <option value="">Seleccione un planeta</option>
+                        <option value="tatooine">Tatooine</option>
+                        <option value="alderaan">Alderaan</option>
+                        <option value="naboo">Naboo</option>
+                        <option value="coruscant">Coruscant</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="droide">Droide:</label><br>
+                    <select id="droide" name="droide" multiple size="2">
+                        <option value="">Seleccione un droide</option>
+                        <option value="r2d2">R2-D2</option>
+                        <option value="c3po">C-3PO</option>
+                        <option value="ackbar">Ackbar</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Datos Generales</legend>
+                        <label for="misiones"
+                    </fieldset>
+                </td>
+        </table>
         <button type="submit">Enviar</button>
+        <button type="reset">Reset</button>
     </form>
 </body>
+
 </html>
