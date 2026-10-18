@@ -1,0 +1,15 @@
+section {
+  margin: 28px 0;
+}
+
+form {
+  max-width: 460px;
+  padding: 18px;
+  background: #fff;
+  border: 1px solid #d5dfd1;
+  border-radius: 8px;
+}
+
+tbody tr:nth-child(even) {
+  background: #f3f6f0;
+}
