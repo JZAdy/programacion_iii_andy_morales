@@ -1,0 +1,18 @@
+.espacios {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.espacio {
+  padding: 20px;
+  background: #fff;
+  border-left: 4px solid #73966f;
+  border-radius: 6px;
+}
+
+@media (max-width: 650px) {
+  .espacios {
+    grid-template-columns: 1fr;
+  }
+}
