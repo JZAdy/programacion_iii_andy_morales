@@ -1,0 +1,20 @@
+.visita {
+  padding: 24px;
+  background: #e4eddf;
+  border-radius: 8px;
+}
+
+.visita .boton {
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.visita .boton:hover {
+  background: #254c38;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .visita {
+    padding: 16px;
+  }
+}
