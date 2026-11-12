@@ -80,3 +80,18 @@ function calcularTotalCristales(cristales) {
 let cristalesRecolectados = [5, 10, 15, 20, 25];
 let totalCristales = calcularTotalCristales(cristalesRecolectados);
 console.log("Total de cristales recolectados: " + totalCristales);
+
+
+function calcmisionesExitosas(cristal){
+    let misionE = 0;
+    for (let i = 0; i <= cristal.length; i++) {
+        if (i >= 50){
+            misionE++;
+        }
+    }
+    return misionE
+}
+
+let cristalesxmision = [80, 20, 30, 50, 60, 40];
+let totalmisionesE = calcmisionesExitosas(cristalesxmision);
+console.log("total misiones exitosas: " + totalmisionesE);
