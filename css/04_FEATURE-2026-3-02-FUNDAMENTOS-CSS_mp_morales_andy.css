@@ -1,0 +1,18 @@
+body {
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+pre {
+  padding: 12px;
+  overflow-x: auto;
+  background: #eee;
+  border-radius: 4px;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
