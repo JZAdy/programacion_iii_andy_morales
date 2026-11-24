@@ -1,0 +1,22 @@
+body {
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+pre {
+  padding: 12px;
+  overflow-x: auto;
+  background: #efefef;
+}
+
+.boton {
+  padding: 10px 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #555;
+  color: white;
+  transform: scale(1.05);
+}
