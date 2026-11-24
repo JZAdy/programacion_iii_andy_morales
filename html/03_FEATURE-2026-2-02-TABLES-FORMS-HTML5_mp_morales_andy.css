@@ -1,0 +1,13 @@
+body {
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+pre {
+  padding: 12px;
+  overflow-x: auto;
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+}
